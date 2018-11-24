@@ -1,11 +1,13 @@
+import jikanpy
 import requests
 
 import time as t
 from datetime import datetime
+
 from jikanpy import Jikan
 from pymongo import MongoClient
 
-#inicia o cliente
+# inicia o cliente
 client = MongoClient()
 # nome do bd
 db = client.t2
@@ -13,14 +15,13 @@ db = client.t2
 anime = db.anime
 
 jikan = Jikan()
-cont = 0
-for x in range(1, 20):
-    r = requests.get("https://api.jikan.moe/v3/anime/"+str(x))
 
-    if(r.status_code==200):
-        print("Anime com id: "+str(x))
-        newAnime = jikan.anime(x)
-        #result = anime.insert_one(newAnime)
-    else:
-        print("Erro")
-    t.sleep( 3 )
+for x in range(1, 10): # range teste
+    r = requests.get("https://api.jikan.moe/v3/anime/" + str(x))
+    try:
+        newAnime = jikan.anime(x)  # passar o json do anime com id x para variável
+        print("Ok")
+        # anime.insert_one(newAnime)  # Inserir anime na coleção do mongo db
+    except jikanpy.exceptions.APIException as e: #erro 4x na API
+        print("Anime com id " + str(x) + " não existe")  # anime sem ID
+    t.sleep(3)

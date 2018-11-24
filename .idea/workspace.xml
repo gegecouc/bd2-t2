@@ -12,7 +12,7 @@
     <session id="-78960994">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.9" value="1" />
@@ -31,36 +31,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="15" />
-          <entry key="py" value="1139" />
+          <entry key="dummy" value="20" />
+          <entry key="py" value="1645" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="1139" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Python" value="1645" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app1/car.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="28" selection-start-line="18" selection-end-line="19" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/anime.py">
+        <entry file="file://$PROJECT_DIR$/../bd2_t2/carga.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="442">
+              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
               <folding>
-                <element signature="e#2#17#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,12 +71,13 @@
       <list>
         <option value="$PROJECT_DIR$/aula.py" />
         <option value="$PROJECT_DIR$/anime.py" />
+        <option value="$PROJECT_DIR$/../bd2_t2/carga.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="359" />
-    <option name="y" value="13" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="59" />
+    <option name="y" value="2" />
     <option name="width" value="886" />
     <option name="height" value="688" />
   </component>
@@ -99,8 +91,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="aula" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aula" type="462c0819:PsiDirectoryNode" />
+              <item name="bd2_t2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bd2-t2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -109,7 +101,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../app1" />
+    <property name="last_opened_file_path" value="$USER_HOME$/repos/bd2-t2" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -126,7 +118,7 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="bd2_t2" />
+      <module name="bd2-t2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -146,19 +138,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="aula" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="bd2_t2" />
+    <configuration name="carga" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="bd2-t2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../bd2_t2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\gegec\PycharmProjects\aula\anime.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../bd2_t2/carga.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,7 +160,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="bd2_t2" />
+      <module name="bd2-t2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -179,7 +171,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="bd2_t2" />
+      <module name="bd2-t2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -197,7 +189,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
-      <module name="bd2_t2" />
+      <module name="bd2-t2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -212,7 +204,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Twisted Trial">
-      <module name="bd2_t2" />
+      <module name="bd2-t2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -226,7 +218,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="bd2_t2" />
+      <module name="bd2-t2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -240,7 +232,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
-      <module name="bd2_t2" />
+      <module name="bd2-t2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
@@ -256,7 +248,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.aula" />
+        <item itemvalue="Python.carga" />
       </list>
     </recent_temporary>
   </component>
@@ -274,22 +266,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="520" y="8" width="886" height="688" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3856132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49875623" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49882075" weight="0.299509" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50124377" side_tool="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5011792" side_tool="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -318,12 +309,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/anime.py">
+    <entry file="file://$PROJECT_DIR$/../bd2_t2/carga.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="442">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
           <folding>
-            <element signature="e#2#17#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
