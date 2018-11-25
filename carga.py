@@ -1,3 +1,6 @@
+import json
+from collections import namedtuple
+
 import jikanpy
 import requests
 
@@ -22,6 +25,8 @@ for x in range(1, 10): # range teste
         newAnime = jikan.anime(x)  # passar o json do anime com id x para variável
         print("Ok")
         # anime.insert_one(newAnime)  # Inserir anime na coleção do mongo db
+        
+
     except jikanpy.exceptions.APIException as e: #erro 4x na API
         print("Anime com id " + str(x) + " não existe")  # anime sem ID
     t.sleep(3)
