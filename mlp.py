@@ -1,4 +1,3 @@
-
 from jikanpy import Jikan
 from pymongo import MongoClient
 from bson.son import SON
@@ -18,7 +17,7 @@ db = client.t2
 
 pipeline = [
     {"$unwind": "$genres"},
-    {"$group": {"_id": "$genres.name", "count": {"$sum": 1}}},
+    {"$group": {"_id": "$genres.name", "count": {"$sum": 1}, "avg": {"$avg": "$score"}, "quantidade_votos":{"$sum", "$scored_by"}}},
     {"$sort": SON([("count", -1), ("_id", -1)])},
     {"$limit": 10}
 ]
@@ -120,6 +119,8 @@ pipeline = [
 animes_word = list(db.anime.aggregate(pipeline))
 # pprint.pprint(animes_word)
 
+
+#GRAFICO PIZZA
 labels = []
 values = []
 for palavra in animes_genero:
@@ -127,4 +128,48 @@ for palavra in animes_genero:
     values.append(palavra['count'])
 
 trace = go.Pie(labels=labels, values=values)
-py.iplot([trace], filename='basic_pie_chart')
+py.plot([trace], filename='basic_pie_chart')
+
+
+#GRAFICO SCATTER
+
+#grafico_media_numeroAnime_genero
+labels = []
+values = []
+for palavra in animes_genero:
+    labels.append(palavra['avg'])
+    values.append(palavra['count'])
+
+trace = go.Scatter(
+    x = labels,
+    y = values,
+    mode = 'markers'
+)
+data = [trace]
+py.plot(data, filename='basic-scatter')
+
+
+#grafico_media_numeroVotos_numeroAnime_genero
+labels = []
+values = []
+size=[]
+for palavra in animes_genero:
+    labels.append(palavra['avg'])
+    values.append(palavra['count'])
+    size.append(palavra['quantidade_votos'])
+trace1 = go.Scatter(
+    x = labels,
+    y = values,
+    mode='markers',
+    marker=dict(
+        size=size,
+        colorscale='Viridis',
+        showscale=True
+    )
+)
+data = [trace1]
+py.plot(data, filename='scatter-plot-with-colorscale')
+
+
+#GRAFICO BARRAS
+
